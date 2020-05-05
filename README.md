@@ -22,7 +22,6 @@ setResponseHeader()                                      //设置请求是否返
 addRequestCookie('access_token=abcdefj')                 //设置请求Cookie 字符串方式
 addRequestCookie('access_token','abcdefj')               //设置请求Cookie 多参数方式
 setRequestContentType($curl::CONTENT_TYPE_JSON)          //设置请求ContentType 枚举常量
-setRequestContentType($curl::CONTENT_TYPE_JSON)          //设置请求ContentType 枚举常量
 setRequestReferer('https://hamm.cn')                     //设置请求的Referer
 setRequestSSL()                                          //设置检查TLS证书 默认不检查
 setRequestTimeout(10)                                    //设置超时时间为10秒
