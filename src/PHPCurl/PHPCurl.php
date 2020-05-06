@@ -1,9 +1,9 @@
 <?php
-
+namespace PHPCurl;
 /**
  * Curl操作类 https://gitee.com/hamm/PHPCurl
  */
-class Curl
+class PHPCurl
 {
     /**
      * 当前的CURL实体对象
