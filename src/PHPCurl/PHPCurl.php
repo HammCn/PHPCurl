@@ -1,5 +1,5 @@
 <?php
-namespace PHPCurl;
+namespace phpcurl;
 /**
  * Curl操作类 https://gitee.com/hamm/PHPCurl
  */
