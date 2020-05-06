@@ -4,6 +4,7 @@ PHPCurl操作类是一个对Curl库的常用操作进行高度封装的操作对
 ## 使用说明
 
 1. 引入Curl类，实例化一个操作对象：
+> 推荐使用Composer引入 ``` composer require hamm/php-curl ```
 ```php
 <?php 
 require_once("Curl.php");
