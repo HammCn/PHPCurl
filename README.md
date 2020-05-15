@@ -7,11 +7,23 @@ PHPCurl操作类是一个对Curl库的常用操作进行高度封装的操作对
 > 推荐使用Composer引入 ``` composer require hamm/php-curl ```
 ```php
 <?php 
-require_once("Curl.php");
+require('vendor/autoload.php');
 $url = 'https://hamm.cn';
-$curl = new Curl($url);
-// 除去do**开头的方法之外，都支持链式操作
-// $curl->set***()->set***()->set***()
+//直接实例化
+$curl = new phpcurl\PHPCurl($url);
+//在面向对象框架中，可引入命名空间后再实例化
+// use phpcurl\PHPCurl;
+// $curl = new PHPCurl($url);
+// set/add相关方法都支持链式操作
+$curl->set***()->set***()->set***()->add***();
+```
+> 直接引用可直接下载 src/PHPCurl/PHPCurl.php 文件后直接引用
+```php
+<?php
+require_once('PHPCurl.php');
+$url = 'https://hamm.cn';
+$curl = new PHPCurl($url);
+$curl->set***()->set***()->set***()->add***();
 ```
 
 2.请求前的相关设置
